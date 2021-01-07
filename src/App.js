@@ -1,7 +1,8 @@
 import './App.css';
-import { createMuiTheme, makeStyles, Paper, ThemeProvider } from '@material-ui/core';
+import { createMuiTheme, Paper, ThemeProvider } from '@material-ui/core';
 import {BrowserRouter as Router, Route,Switch } from 'react-router-dom';
 
+import HomeScreen from "./screens/HomeScreen";
 import GridScreen from './screens/GridScreen';
 import ItemScreen from './screens/ItemScreen';
 import dataList from './data/dataList';
@@ -12,25 +13,23 @@ const theme = createMuiTheme({
   }
 });
 
-const useStyles = makeStyles(({
-  root: {
-    display:'flex',
-  },
-}))
-
 function App() {
-  const classes = useStyles();
   return (
     <ThemeProvider theme={theme}>
-      <Paper square className={classes.root}>
+      <Paper square>
         <Router>
           <Switch>
+            <Route exact path="/">
+              <HomeScreen/>
+            </Route>
             <Route exact path="/list">
               <GridScreen/>
             </Route>
-            <Route exact path="/item">
-              <ItemScreen item={dataList[0]}/>
-            </Route>
+            {dataList.map(item=>
+              <Route exact path={`/item/${item.id}`}>
+                <ItemScreen item={item}/>
+              </Route>  
+            )}
           </Switch>
         </Router>
       </Paper>

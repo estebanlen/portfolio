@@ -1,8 +1,7 @@
-import { Card, CardContent, CardMedia, Grid, Paper, Typography } from '@material-ui/core';
 import React from 'react';
+import { Card, CardContent, Grid, Typography } from '@material-ui/core';
 import Carousel from '../components/Carousel';
 
-import img from "../img/brownies.jpg";
 
 function ItemScreen({item}) {
   
@@ -11,11 +10,7 @@ function ItemScreen({item}) {
             <CardContent>
                 <Grid container spacing={1}>
                     <Grid item xs={12} md={8}>
-                        {/* <CardMedia
-                            component="img"
-                            image={item.img}
-                        /> */}
-                        <Carousel/>
+                        <Carousel img={item.img}/>
                     </Grid>
                     <Grid item xs={12} md={4}>
                         <Typography variant="h3" color="initial">{item.title}</Typography>

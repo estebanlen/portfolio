@@ -3,6 +3,7 @@ import { Grid } from '@material-ui/core';
 
 import AppCard from "../components/AppCard";
 import dataList from '../data/dataList';
+import { Link } from 'react-router-dom';
 
 function GridScreen(props) {
     
@@ -15,7 +16,9 @@ function GridScreen(props) {
       >
         {dataList.map(item=>
           <Grid item>
-            <AppCard title={item.title} subtitle={item.subtitle} img={item.img}/>
+            <Link style={{color:'inherit', textDecoration: 'inherit'}}to={`/item/${item.id}`}>
+              <AppCard title={item.title} subtitle={item.subtitle} img={item.img}/>
+            </Link>
           </Grid>  
         )}
       </Grid>

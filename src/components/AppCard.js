@@ -1,10 +1,11 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import {Card,CardActionArea,CardActions,CardContent,CardMedia,Button,Typography} from '@material-ui/core/';
+import { Card, CardActionArea, CardContent, CardMedia, Typography } from '@material-ui/core/';
 
 const useStyles = makeStyles({
   root: {
-    maxWidth: 345,
+    height:300,
+    width: 350,
   },
   media: {
     height: 140,
@@ -14,11 +15,11 @@ const useStyles = makeStyles({
 function AppCard({title,subtitle,img}) {
     const classes = useStyles();
     return (
+      <CardActionArea>
         <Card className={classes.root}>
-        <CardActionArea>
           <CardMedia
             className={classes.media}
-            image={img}
+            image={img[0]}
             title="Contemplative Reptile"
           />
           <CardContent>
@@ -29,16 +30,8 @@ function AppCard({title,subtitle,img}) {
               {subtitle}
             </Typography>
           </CardContent>
-        </CardActionArea>
-        <CardActions>
-          <Button size="small" color="primary">
-            Share
-          </Button>
-          <Button size="small" color="primary">
-            Learn More
-          </Button>
-        </CardActions>
-      </Card>
+        </Card>
+      </CardActionArea>
     );
 }
 
