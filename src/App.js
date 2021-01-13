@@ -13,6 +13,16 @@ const theme = createMuiTheme({
   }
 });
 
+theme.typography.h1 = {
+  fontSize: '6rem',
+  '@media (min-width:0px)': {
+    fontSize: '3rem',
+  },
+  [theme.breakpoints.up('sm')]: {
+    fontSize: '6rem',
+  },
+};
+
 function App() {
   return (
     <ThemeProvider theme={theme}>
@@ -22,11 +32,11 @@ function App() {
             <Route exact path="/">
               <HomeScreen/>
             </Route>
-            <Route exact path="/list">
+            <Route exact path="/projects">
               <GridScreen/>
             </Route>
             {dataList.map(item=>
-              <Route exact path={`/item/${item.id}`}>
+              <Route exact path={`/projects/${item.id}`}>
                 <ItemScreen item={item}/>
               </Route>  
             )}
