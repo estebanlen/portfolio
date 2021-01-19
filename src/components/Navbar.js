@@ -1,8 +1,60 @@
 import React from 'react';
-import { AppBar, Button, Grid, Toolbar } from '@material-ui/core';
+import { Accordion, AccordionDetails, AccordionSummary, AppBar, Button, Grid, Hidden, IconButton, Toolbar } from '@material-ui/core';
+import MenuIcon from '@material-ui/icons/Menu'
 import { makeStyles } from '@material-ui/core/styles';
+import { Link } from "react-scroll";
 
+const AppLink = (props)=>(
+  <Link
+    activeClass="active"
+    to={props.to}
+    spy={true}
+    smooth={true}
+    offset={-70}
+    duration={500}
+  >
+    {props.children}
+  </Link>
+)
 
+const NavbarButtons = ()=>(
+  <>
+    <AppLink to="home">
+      <Button color="inherit">Home</Button>
+    </AppLink>
+    <AppLink to="projects">
+      <Button color="inherit">Projects</Button>
+    </AppLink>
+    <AppLink to="about">
+      <Button color="inherit">About</Button>
+    </AppLink>
+  </>
+);
+
+const FullNavbar = () => (
+  <Hidden smDown>
+    <NavbarButtons/>
+  </Hidden>
+);
+
+const HiddenNavbar = ()=>(
+  <Hidden smUp>
+    <Accordion  style={{backgroundColor:'transparent',border:0}} variant="outlined">
+    <Grid container justify="center">
+    <AccordionSummary
+      expandIcon={<MenuIcon />}
+      // aria-controls="panel1a-content"
+      // id="panel1a-header"
+      />
+      </Grid>
+    <AccordionDetails>
+      <Grid container alignItems="center" direction="column">
+        <NavbarButtons/>
+      </Grid>
+    </AccordionDetails>
+    </Accordion>
+  </Hidden>
+);
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -26,22 +78,9 @@ function Navbar(props) {
     <div className={classes.root}>
       <AppBar className={classes.appBar} position="absolute" color="transparent" variant="outlined" elevation={0}>
         <Toolbar>
-          {/* <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
-            <MenuIcon />
-          </IconButton>
-          <Typography variant="h6" className={classes.title}>
-            EL
-          </Typography> */}
             <Grid container justify="center">
-                <Grid item>
-                    <Button color="inherit">Home</Button>
-                </Grid>
-                <Grid item>
-                    <Button color="inherit">Projects</Button>
-                </Grid>
-                <Grid item>
-                    <Button color="inherit">About</Button>
-                </Grid>
+              <FullNavbar/>
+              <HiddenNavbar/>
             </Grid>
         </Toolbar>
       </AppBar>

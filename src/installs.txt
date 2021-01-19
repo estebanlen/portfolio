@@ -1,0 +1,11 @@
+Material-UI:
+	//general
+	//icons
+Links:
+	//react-router-dom
+	//scroll
+
+//EXTRA ICONS:
+npm install mdi-material-ui --save
+
+npm install @mdi/react @mdi/js
