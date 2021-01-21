@@ -2,8 +2,8 @@ import React from 'react';
 import { Grid, Typography } from '@material-ui/core';
 
 import Navbar from './Navbar';
-import backgroundImage from "../img/home.jpg";
 import SocialMedia from './SocialMedia';
+import backgroundImage from "../assets/img/home.jpg";
 
 const styles={
     root:{
@@ -27,7 +27,7 @@ function Header(props) {
                     <Typography variant="h1" color="initial">Esteban Lencina</Typography>
                 </Grid>
                 <Grid item>
-                    <Typography variant="h4" color="initial">Developer</Typography>
+                    <Typography variant="h4" component="h4" color="initial">Developer</Typography>
                 </Grid>
                 <Grid item>
                     <SocialMedia/>

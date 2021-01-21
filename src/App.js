@@ -1,31 +1,12 @@
 import './App.css';
-import { createMuiTheme, Paper, ThemeProvider } from '@material-ui/core';
+import { Paper, ThemeProvider } from '@material-ui/core';
 // import {BrowserRouter as Router, Route,Switch } from 'react-router-dom';
 
 import HomeScreen from "./screens/HomeScreen";
+import theme from './config/theme';
 // import GridScreen from './screens/GridScreen';
 // import ItemScreen from './screens/ItemScreen';
 // import dataList from './data/dataList';
-
-const theme = createMuiTheme({
-  palette:{
-    type:"dark",
-    background:{
-      paper:"#303030",
-      default:"#212121",
-    },
-  }
-});
-
-theme.typography.h1 = {
-  fontSize: '6rem',
-  '@media (min-width:0px)': {
-    fontSize: '3rem',
-  },
-  [theme.breakpoints.up('sm')]: {
-    fontSize: '6rem',
-  },
-};
 
 function App() {
   return (

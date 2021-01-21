@@ -1,13 +1,19 @@
 import React from 'react';
 import { Grid, Typography } from '@material-ui/core';
 import MyCard from './MyCard';
+import projectsData from '../data/projectsData';
 
 function LastProjects(props) {
     return (
         <div>
-            <Typography align="center" variant="h2" color="initial">Últimos proyectos</Typography>
+            <Typography align="center" variant="h3" color="initial">Últimos proyectos</Typography>
             <Grid container spacing={2} justify="center">
-                <Grid item>
+                {projectsData.map(project=>
+                    <Grid item>
+                        <MyCard item={project}/>
+                    </Grid>    
+                )}
+                {/* <Grid item>
                     <MyCard/>
                 </Grid>
                 <Grid item>
@@ -15,7 +21,7 @@ function LastProjects(props) {
                 </Grid>
                 <Grid item>
                     <MyCard/>
-                </Grid>
+                </Grid> */}
             </Grid>
         </div>
     );

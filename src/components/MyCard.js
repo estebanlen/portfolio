@@ -1,16 +1,12 @@
 import React from 'react';
+import { Card, CardActionArea, CardContent, CardMedia, Typography } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
-import Card from '@material-ui/core/Card';
-import CardActionArea from '@material-ui/core/CardActionArea';
-import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
-import Typography from '@material-ui/core/Typography';
 
-import cover from "../img/code.jpg";
+import cover from "../assets/img/code.jpg";
 
 const useStyles = makeStyles({
   root: {
-    maxWidth: 345,
+    width: 345,
     margin:5,
   },
   media: {
@@ -18,7 +14,7 @@ const useStyles = makeStyles({
   },
 });
 
-function MyCard(props) {
+function MyCard({item}) {
     const classes = useStyles();
 
     return (
@@ -31,10 +27,10 @@ function MyCard(props) {
           />
           <CardContent>
             <Typography gutterBottom align="center" variant="h5" component="h2">
-              Proyecto
+              {item.title}
             </Typography>
             <Typography align="center" variant="body2" color="textSecondary" component="p">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at.
+              {item.subtitle}
             </Typography>
           </CardContent>
         </CardActionArea>

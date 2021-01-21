@@ -1,7 +1,5 @@
 import React from 'react';
-import { Grid, IconButton } from '@material-ui/core';
-import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
-import { animateScroll as scroll } from "react-scroll";
+import { Grid } from '@material-ui/core';
 
 import SocialMedia from './SocialMedia';
 
@@ -22,9 +20,6 @@ function Footer(props) {
             style={styles.footer}
             >
             <SocialMedia/>
-            <IconButton size="medium" onClick={()=>scroll.scrollToTop()}>
-                <KeyboardArrowUpIcon/>
-            </IconButton>
         </Grid>
     );
 }

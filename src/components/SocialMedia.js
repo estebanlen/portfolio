@@ -1,14 +1,10 @@
-import { IconButton } from '@material-ui/core';
 import React from 'react';
-
-
-
-import { mdiGitlab } from '@mdi/js';
-import Icon from '@mdi/react' 
-
+import { IconButton } from '@material-ui/core';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import MailIcon from '@material-ui/icons/Mail';
 import InstagramIcon from '@material-ui/icons/Instagram';
+import { mdiGitlab } from '@mdi/js';
+import Icon from '@mdi/react' 
 
 const MyIcon = (props) => (
         <IconButton

@@ -1,7 +1,9 @@
 import React from 'react';
-import { Grid, Typography } from '@material-ui/core';
+import { Button, Grid, Typography } from '@material-ui/core';
+import GetAppIcon from '@material-ui/icons/GetApp';
 
-import aboutImg from "../img/about.jpg"
+import aboutImg from "../assets/img/about.jpg";
+import cvFile from "../assets/download/CV_LencinaEsteban_2020.pdf";
 
 const styles={
     img:{
@@ -13,7 +15,7 @@ const styles={
 function About(props) {
     return (
         <div>
-            <Typography align="center" variant="h2" color="initial">Sobre mi</Typography>
+            <Typography align="center" variant="h3" color="initial">Sobre mi</Typography>
             <Grid container spacing={2}>
                 <Grid item md={4}>
                     <img
@@ -37,6 +39,18 @@ function About(props) {
                         Algunas de mis cualidades son ser tranquilo, positivo, organizado, y tener facilidad
                         de aprendizaje en lenguajes de programación.
                     </Typography>
+                    <br/>
+                        <Button
+                            component='a'
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            download
+                            variant="outlined"
+                            color="inherit"
+                            href={cvFile}
+                            // className={classes.button}
+                            startIcon={<GetAppIcon />}
+                        >Descargar CV</Button>
                 </Grid>
             </Grid>
         </div>

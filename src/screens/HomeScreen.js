@@ -5,6 +5,7 @@ import Header from '../components/Header';
 import LastProjects from '../components/LastProjects';
 import About from '../components/About';
 import Footer from '../components/Footer';
+import ScrollTopButton from '../components/ScrollTopButton';
 
 function HomeScreen(props) {
     return (
@@ -21,6 +22,7 @@ function HomeScreen(props) {
                 </div>
             </Container>
             <Footer/>
+            <ScrollTopButton/>
         </div>
     );
 }

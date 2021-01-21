@@ -1,7 +1,7 @@
 import React from 'react';
-import { Accordion, AccordionDetails, AccordionSummary, AppBar, Button, Grid, Hidden, IconButton, Toolbar } from '@material-ui/core';
-import MenuIcon from '@material-ui/icons/Menu'
+import { Accordion, AccordionDetails, AccordionSummary, AppBar, Button, Grid, Hidden, Toolbar } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
+import MenuIcon from '@material-ui/icons/Menu'
 import { Link } from "react-scroll";
 
 const AppLink = (props)=>(
@@ -32,7 +32,7 @@ const NavbarButtons = ()=>(
 );
 
 const FullNavbar = () => (
-  <Hidden smDown>
+  <Hidden xsDown>
     <NavbarButtons/>
   </Hidden>
 );
@@ -43,8 +43,6 @@ const HiddenNavbar = ()=>(
     <Grid container justify="center">
     <AccordionSummary
       expandIcon={<MenuIcon />}
-      // aria-controls="panel1a-content"
-      // id="panel1a-header"
       />
       </Grid>
     <AccordionDetails>
@@ -69,6 +67,14 @@ const useStyles = makeStyles((theme) => ({
   appBar:{
     border: 0
   },
+  accordion:{
+    width:"100%",
+  },
+  topButton:{
+    position: 'fixed',
+    bottom: theme.spacing(2),
+    right: theme.spacing(2),
+  }
 }));
 
 function Navbar(props) {
