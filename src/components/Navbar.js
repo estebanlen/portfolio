@@ -41,9 +41,9 @@ const HiddenNavbar = ()=>(
   <Hidden smUp>
     <Accordion  style={{backgroundColor:'transparent',border:0}} variant="outlined">
     <Grid container justify="center">
-    <AccordionSummary
-      expandIcon={<MenuIcon />}
-      />
+      <AccordionSummary>
+        <MenuIcon/>
+      </AccordionSummary>
       </Grid>
     <AccordionDetails>
       <Grid container alignItems="center" direction="column">

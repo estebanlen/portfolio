@@ -2,6 +2,7 @@ import React from 'react';
 import { Button, Grid, Typography } from '@material-ui/core';
 import GetAppIcon from '@material-ui/icons/GetApp';
 
+import Skills from './Skills';
 import aboutImg from "../assets/img/about.jpg";
 import cvFile from "../assets/download/CV_LencinaEsteban_2020.pdf";
 
@@ -36,6 +37,8 @@ function About(props) {
                         Actualmente estoy desarrollando, junto a un colega, una aplicación para
                         dispositivos móviles multiplataforma mediante la herramienta React Native, además
                         de una versión web con React JS.
+                    </Typography>
+                    <Typography variant="body1" color="initial" align="justify">
                         Algunas de mis cualidades son ser tranquilo, positivo, organizado, y tener facilidad
                         de aprendizaje en lenguajes de programación.
                     </Typography>
@@ -53,6 +56,7 @@ function About(props) {
                         >Descargar CV</Button>
                 </Grid>
             </Grid>
+            <Skills/>
         </div>
     );
 }

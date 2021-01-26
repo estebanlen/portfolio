@@ -9,3 +9,9 @@ Links:
 npm install mdi-material-ui --save
 
 npm install @mdi/react @mdi/js
+
+COLORES:
+Principal:  #191B39
+Secundario: #998A53
+
+Principal-light: #535799
