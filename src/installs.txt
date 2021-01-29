@@ -1,14 +1,14 @@
 Material-UI:
-	//general
-	//icons
+	npm install @material-ui/core
+	npm install @material-ui/icons
 Links:
 	//react-router-dom
-	//scroll
+	npm install react-scroll
 
 //EXTRA ICONS:
-npm install mdi-material-ui --save
-
 npm install @mdi/react @mdi/js
+//este no va: npm install mdi-material-ui --save
+
 
 COLORES:
 Principal:  #191B39

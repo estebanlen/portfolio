@@ -1,19 +1,24 @@
-import { Box, LinearProgress, Typography } from '@material-ui/core';
-import React from 'react'
+import React from "react";
+import { Box, LinearProgress, Typography } from "@material-ui/core";
 
-function AppLinearProgress(props) {
-    return (
-      <Box display="flex" alignItems="center">
-        <Box width="100%" mr={1}>
-          <LinearProgress variant="determinate" {...props} />
-        </Box>
-        <Box minWidth={35}>
-          <Typography variant="body2" color="textSecondary">{`${Math.round(
-            props.value,
-          )}%`}</Typography>
-        </Box>
+function AppLinearProgress({ name, value }) {
+  return (
+    <Box display="flex" alignItems="center">
+      <Box minWidth={100}>
+        <Typography variant="button" color="initial">
+          {name}
+        </Typography>
       </Box>
-    );
-  }
+      <Box width="100%" mr={1}>
+        <LinearProgress variant="determinate" value={value} />
+      </Box>
+      <Box minWidth={35}>
+        <Typography variant="body2" color="textSecondary">{`${Math.round(
+          value
+        )}%`}</Typography>
+      </Box>
+    </Box>
+  );
+}
 
-  export default AppLinearProgress;
+export default AppLinearProgress;
