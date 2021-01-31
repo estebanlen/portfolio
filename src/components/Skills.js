@@ -3,6 +3,7 @@ import { Grid, Typography } from "@material-ui/core";
 
 import AppLinearProgress from "./AppLinearProgress";
 import skillsData from "../data/skillsData";
+import AppTitle from "./AppTitle";
 
 function DisplaySkills(props) {
   return (
@@ -20,9 +21,7 @@ function DisplaySkills(props) {
 function Skills(props) {
   return (
     <div>
-      <Typography variant="h4" align="center" color="initial">
-        Habilidades
-      </Typography>
+      <AppTitle title="Habilidades" variant="h4" />
       <Grid container spacing={3}>
         {skillsData.map((skills) => (
           <Grid item xs={12} md={4}>

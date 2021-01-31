@@ -1,10 +1,21 @@
 import React from "react";
+import { makeStyles, Typography } from "@material-ui/core";
 
-function AppTitle({ title }) {
+const useStyles = makeStyles((theme) => ({
+  root: {
+    marginTop: theme.spacing(3),
+    marginBottom: theme.spacing(3),
+  },
+}));
+
+function AppTitle({ disableMargin = false, variant, title }) {
+  const classes = useStyles();
   return (
-    <Typography align="center" variant="h3" color="initial">
-      {title}
-    </Typography>
+    <div className={!disableMargin && classes.root}>
+      <Typography align="center" variant={variant} color="initial">
+        {title}
+      </Typography>
+    </div>
   );
 }
 
