@@ -8,31 +8,36 @@ import Icon from "@mdi/react";
 
 const MyIcon = (props) => (
   <IconButton
-    href={props.href}
-    color="inherit"
-    aria-label="upload picture"
-    component="a"
-    target="_blank"
+      href={props.href}
+      color="inherit" 
+      aria-label="upload picture"
+      component="a" 
+      target="_blank"
   >
-    {props.path ? <Icon path={props.path} size={1} /> : props.children}
+      {props.path?
+          <Icon path={props.path} size={props.size==="" ? 1 : 1.5}/>
+      :
+          props.children
+      }
   </IconButton>
-);
+)
 
-function SocialMedia(props) {
-  return (
-    <div>
+function SocialMedia({size=""}) {
+
+return (
+  <div>
       <MyIcon href="https://www.linkedin.com/in/estebanlen">
-        <LinkedInIcon />
+          <LinkedInIcon fontSize={size}/>
       </MyIcon>
       <MyIcon href="https://www.instagram.com/tebienlugares">
-        <InstagramIcon />
+          <InstagramIcon fontSize={size}/>
       </MyIcon>
-      <MyIcon href="mailto:estebandlen@gmail.com">
-        <MailIcon />
+      <MyIcon href="mailto:esteban.dlen@gmail.com">
+          <MailIcon fontSize={size}/>
       </MyIcon>
-      <MyIcon href="https://gitlab.com" path={mdiGitlab} />
-    </div>
-  );
+      <MyIcon href="https://gitlab.com/esteebanlen" path={mdiGitlab} size={size}/>
+  </div>
+);
 }
 
 export default SocialMedia;

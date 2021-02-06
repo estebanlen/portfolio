@@ -2,6 +2,7 @@ import React from 'react';
 import { Grid } from '@material-ui/core';
 
 import SocialMedia from './SocialMedia';
+import AppTitle from './AppTitle';
 
 const styles={
     footer:{
@@ -19,7 +20,8 @@ function Footer(props) {
             alignItems="center" 
             style={styles.footer}
             >
-            <SocialMedia/>
+            <AppTitle variant="h4" title="Contacto"/> 
+            <SocialMedia size="large"/>
         </Grid>
     );
 }
