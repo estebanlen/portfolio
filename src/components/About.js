@@ -32,7 +32,7 @@ function About(props) {
             de confictos dentro del Movimiento Scout, en el cual soy Educador
             desde el 2015. Actualmente estoy desarrollando, junto a un colega,
             una aplicación para dispositivos móviles multiplataforma mediante la
-            herramienta React Native, además de una versión web con React JS.
+            herramienta React Native, además de una versión web con React JS. cosa cosa
           </Typography>
           <Typography variant="body1" color="initial" align="justify">
             Algunas de mis cualidades son ser tranquilo, positivo, organizado, y
