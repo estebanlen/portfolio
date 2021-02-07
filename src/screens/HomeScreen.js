@@ -13,7 +13,7 @@ function HomeScreen(props) {
             <div id="home">
                 <Header/>
             </div>
-            <Container maxWidth="lg">
+            <Container maxWidth="lg" style={{marginBottom: 20}}>
                 <div id="projects">
                     <LastProjects/>
                 </div>
@@ -21,7 +21,9 @@ function HomeScreen(props) {
                     <About/>
                 </div>
             </Container>
-            <Footer/>
+            <div id="contact">
+                <Footer/>
+            </div>
             <ScrollTopButton/>
         </div>
     );

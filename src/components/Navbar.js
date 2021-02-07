@@ -19,14 +19,14 @@ const AppLink = (props)=>(
 
 const NavbarButtons = ()=>(
   <>
-    <AppLink to="home">
-      <Button color="inherit">Home</Button>
-    </AppLink>
     <AppLink to="projects">
-      <Button color="inherit">Projects</Button>
+      <Button color="inherit">Proyectos</Button>
     </AppLink>
     <AppLink to="about">
-      <Button color="inherit">About</Button>
+      <Button color="inherit">Sobre mí</Button>
+    </AppLink>
+    <AppLink to="contact">
+      <Button color="inherit">Contacto</Button>
     </AppLink>
   </>
 );

@@ -1,26 +1,25 @@
-const projectsData = [
-  {
-    id: 1,
-    title: "Portfolio website",
-    subtitle: "Este es el subtítulo del Proyecto",
-    desc: "Descrpción",
-    img: "ruta",
-  },
-  {
-    id: 2,
-    title: "Proyecto 2",
-    subtitle: "Este es el subtítulo del Proyecto",
-    desc: "Descrpción",
-    img: "ruta",
-  },
-  {
-    id: 3,
-    title: "Proyecto 3",
-    subtitle:
-      "Este es el subtítulo del Proyecto demasiado largo para ver que pasa",
-    desc: "Descrpción",
-    img: "ruta",
-  },
+import torontoImg   from "../assets/img/BarberiaToronto.png";
+import portfolioImg from "../assets/img/PortfolioWeb.png";
+
+const projectsData=[
+    { 
+        id:1, 
+        title:"Portfolio Web", 
+        img:[portfolioImg], 
+        desc:"Descrpción"
+    },    
+    { 
+        id:2, 
+        title:"Toronto Web", 
+        img:[torontoImg],
+        desc:"Descrpción"
+    },    
+    { 
+        id:3, 
+        title:"Toronto App", 
+        img:[torontoImg], 
+        desc:"Descrpción"
+    },
 ];
 
 export default projectsData;

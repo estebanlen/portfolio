@@ -4,12 +4,17 @@
 	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#191B39;}
-	.st1{fill:#998A53;}
+	.st1{display:none;}
+	.st2{display:inline;fill:#998A53;}
+	.st3{fill:#998A53;}
+	.st4{font-family:'LemonMilk';}
+	.st5{font-size:200px;}
 </style>
 <circle class="st0" cx="256" cy="256" r="256"/>
-<g>
-	<path class="st1" d="M42.9,168.9h42.6v131.9h77.7v42.4H42.9V168.9z"/>
-	<path class="st1" d="M178.3,168.5h120.3V211H223v23.8h58.1v42.5H223v23.8h75.6v42.4H178.3V168.5z"/>
-	<path class="st1" d="M323,168.5L425,260.3v-91.7h44v174.8h-9.6l-101.8-91.5v91.5h-43.9V168.5H323z"/>
+<g class="st1">
+	<path class="st2" d="M42.9,168.9h42.6v131.9h77.7v42.4H42.9V168.9z"/>
+	<path class="st2" d="M178.3,168.5h120.3V211H223v23.8h58.1v42.5H223v23.8h75.6v42.4H178.3V168.5z"/>
+	<path class="st2" d="M323,168.5l102,91.8v-91.7h44v174.8h-9.6l-101.8-91.5v91.5h-43.9V168.5H323z"/>
 </g>
+<text transform="matrix(1 0 0 1 74.3594 326)" class="st3 st4 st5">LEN</text>
 </svg>

@@ -6,7 +6,7 @@ Links:
 	npm install react-scroll
 
 //EXTRA ICONS:
-npm install @mdi/react @mdi/js
+npm install react-scroll @mdi/react @mdi/js
 //este no va: npm install mdi-material-ui --save
 
 
