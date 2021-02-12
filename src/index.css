@@ -20,6 +20,7 @@ code {
   src: url("./assets/fonts/LemonMilklight.otf");
 }
 
-h1 {
+h1,
+h4 {
   font-family: lemonmilk-regular;
 }

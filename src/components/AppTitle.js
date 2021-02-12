@@ -8,11 +8,16 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function AppTitle({ disableMargin = false, variant, title }) {
+function AppTitle({ disableMargin = false, variant, title, style }) {
   const classes = useStyles();
   return (
     <div className={!disableMargin && classes.root}>
-      <Typography align="center" variant={variant} color="initial">
+      <Typography
+        style={style}
+        align="center"
+        variant={variant}
+        color="initial"
+      >
         {title}
       </Typography>
     </div>
