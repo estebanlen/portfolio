@@ -2,7 +2,7 @@ const skillsData = [
   {
     title: "FRONT-END",
     skills: [
-      { name: "React.JS", value: 70 },
+      { name: "React.JS", value: 80 },
       { name: "React Native", value: 70 },
       { name: "JavaScript", value: 60 },
     ],
@@ -11,7 +11,7 @@ const skillsData = [
     title: "BACK-END",
     skills: [
       { name: "PostgreSQL", value: 60 },
-      { name: "MySQL", value: 60 },
+      { name: "SQLServer", value: 60 },
     ],
   },
   {

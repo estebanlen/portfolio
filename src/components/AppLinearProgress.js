@@ -12,11 +12,11 @@ function AppLinearProgress({ name, value }) {
       <Box width="100%" mr={1}>
         <LinearProgress variant="determinate" value={value} />
       </Box>
-      <Box minWidth={35}>
+      {/* <Box minWidth={35}>
         <Typography variant="body2" color="textSecondary">{`${Math.round(
           value
         )}%`}</Typography>
-      </Box>
+      </Box> */}
     </Box>
   );
 }
