@@ -1,27 +1,28 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.a0bebcf3.chunk.css",
-    "main.js": "/portfolio/static/js/main.89dd00ad.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.89dd00ad.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.efaffeeb.chunk.css",
+    "main.js": "/portfolio/static/js/main.ab1befb0.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.ab1befb0.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.3d2e4260.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.3d2e4260.js.map",
-    "static/js/2.36311f9f.chunk.js": "/portfolio/static/js/2.36311f9f.chunk.js",
-    "static/js/2.36311f9f.chunk.js.map": "/portfolio/static/js/2.36311f9f.chunk.js.map",
+    "static/js/2.bfefd9df.chunk.js": "/portfolio/static/js/2.bfefd9df.chunk.js",
+    "static/js/2.bfefd9df.chunk.js.map": "/portfolio/static/js/2.bfefd9df.chunk.js.map",
     "static/js/3.a5c8546c.chunk.js": "/portfolio/static/js/3.a5c8546c.chunk.js",
     "static/js/3.a5c8546c.chunk.js.map": "/portfolio/static/js/3.a5c8546c.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "static/css/main.a0bebcf3.chunk.css.map": "/portfolio/static/css/main.a0bebcf3.chunk.css.map",
-    "static/js/2.36311f9f.chunk.js.LICENSE.txt": "/portfolio/static/js/2.36311f9f.chunk.js.LICENSE.txt",
+    "static/css/main.efaffeeb.chunk.css.map": "/portfolio/static/css/main.efaffeeb.chunk.css.map",
+    "static/js/2.bfefd9df.chunk.js.LICENSE.txt": "/portfolio/static/js/2.bfefd9df.chunk.js.LICENSE.txt",
     "static/media/BarberiaToronto.4c0fd923.png": "/portfolio/static/media/BarberiaToronto.4c0fd923.png",
-    "static/media/CV_LencinaEsteban_2020.7ed3244e.pdf": "/portfolio/static/media/CV_LencinaEsteban_2020.7ed3244e.pdf",
+    "static/media/CV_LencinaEsteban_2021.32239361.pdf": "/portfolio/static/media/CV_LencinaEsteban_2021.32239361.pdf",
     "static/media/index.css": "/portfolio/static/media/LemonMilklight.a6fc12a9.otf",
+    "static/media/PortfolioWeb.af9c86ea.png": "/portfolio/static/media/PortfolioWeb.af9c86ea.png",
     "static/media/about.f1e5b5fe.jpg": "/portfolio/static/media/about.f1e5b5fe.jpg",
     "static/media/home.3f636347.jpg": "/portfolio/static/media/home.3f636347.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.3d2e4260.js",
-    "static/js/2.36311f9f.chunk.js",
-    "static/css/main.a0bebcf3.chunk.css",
-    "static/js/main.89dd00ad.chunk.js"
+    "static/js/2.bfefd9df.chunk.js",
+    "static/css/main.efaffeeb.chunk.css",
+    "static/js/main.ab1befb0.chunk.js"
   ]
 }
