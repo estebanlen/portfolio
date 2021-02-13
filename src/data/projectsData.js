@@ -7,7 +7,7 @@ const projectsData = [
     title: "Portfolio Web",
     img: [portfolioImg],
     desc:
-      "La página que estás viendo! Diseñada con React JS y Material UI, está optimizada para crear un portafolio personal aplicable a cualquier perfil. Tiene un diseño minimalista en una sóla página, sólo con los datos más importantes y un apartado para agregar variedad de proyectos con múltiples imágenes.",
+      "La página que estás viendo! Diseñada con React JS y Material UI, está optimizada para crear un portafolio personal aplicable a cualquier perfil. Tiene un diseño minimalista en una sola página, solo con los datos más importantes y un apartado para agregar variedad de proyectos con múltiples imágenes.",
     link: "https://github.com/estebanlen/portfolio",
   },
   {
@@ -23,7 +23,7 @@ const projectsData = [
     title: "Toronto App",
     img: [torontoImg],
     desc:
-      "App para Android y iOS diseñada para una barbería. Diseñada con React Native y Firebase para guardar los datos, esta app permitirá a los usuarios crearse un perfil, y pedir turnos en una barbería. Podrán elegir la fecha, tipo de corte, y barbero a cargo. La app además recordará al usuario cuando un turno se aproxima. Este proyecto aún está en desarrollo.",
+      "App para Android y iOS diseñada para una barbería. Diseñada con React Native y Firebase para guardar los datos, esta app permitirá a los usuarios crearse un perfil, y pedir turnos. Podrán elegir fecha y hora, tipo de corte, y barbero a cargo. Además recordará al usuario, con un a notificación, cuando un turno se aproxima. Este proyecto aún está en desarrollo.",
     link: "https://gitlab.com/gonzina/torontoapp",
   },
 ];

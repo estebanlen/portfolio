@@ -47,14 +47,15 @@ function About(props) {
           <br />
           <Typography variant="body1" color="initial" align="justify">
             Algunas de mis cualidades son: positivo, organizado, autodidacta,
-            buen trabajo
+            buen trabajo en equipo y facilidad de aprendizaje en lenguajes de
+            programación.
           </Typography>
           <br />
           <Button
             component="a"
             target="_blank"
             rel="noopener noreferrer"
-            download
+            download="CV_LencinaEsteban_Feb2021"
             variant="outlined"
             color="inherit"
             href={cvFile}
