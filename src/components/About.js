@@ -52,6 +52,7 @@ function About(props) {
           </Typography>
           <br />
           <Button
+            size="large"
             component="a"
             target="_blank"
             rel="noopener noreferrer"
