@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.efaffeeb.chunk.css",
-    "main.js": "/portfolio/static/js/main.0d7ad2a3.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.0d7ad2a3.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.dd35f088.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.dd35f088.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.3d2e4260.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.3d2e4260.js.map",
     "static/js/2.bfefd9df.chunk.js": "/portfolio/static/js/2.bfefd9df.chunk.js",
@@ -13,16 +13,16 @@
     "static/css/main.efaffeeb.chunk.css.map": "/portfolio/static/css/main.efaffeeb.chunk.css.map",
     "static/js/2.bfefd9df.chunk.js.LICENSE.txt": "/portfolio/static/js/2.bfefd9df.chunk.js.LICENSE.txt",
     "static/media/BarberiaToronto.3216ffdb.png": "/portfolio/static/media/BarberiaToronto.3216ffdb.png",
-    "static/media/CV_LencinaEsteban_2021.32239361.pdf": "/portfolio/static/media/CV_LencinaEsteban_2021.32239361.pdf",
+    "static/media/CV_LencinaEsteban_2021.a61565a7.pdf": "/portfolio/static/media/CV_LencinaEsteban_2021.a61565a7.pdf",
     "static/media/index.css": "/portfolio/static/media/LemonMilklight.a6fc12a9.otf",
     "static/media/PortfolioWeb.95f546d9.png": "/portfolio/static/media/PortfolioWeb.95f546d9.png",
-    "static/media/about.f1e5b5fe.jpg": "/portfolio/static/media/about.f1e5b5fe.jpg",
-    "static/media/home.32163653.jpg": "/portfolio/static/media/home.32163653.jpg"
+    "static/media/about.b4e30a6d.jpg": "/portfolio/static/media/about.b4e30a6d.jpg",
+    "static/media/home.f61122d6.jpg": "/portfolio/static/media/home.f61122d6.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.3d2e4260.js",
     "static/js/2.bfefd9df.chunk.js",
     "static/css/main.efaffeeb.chunk.css",
-    "static/js/main.0d7ad2a3.chunk.js"
+    "static/js/main.dd35f088.chunk.js"
   ]
 }
