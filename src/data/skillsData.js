@@ -21,6 +21,14 @@ const skillsData = [
       { name: "Illustrator", value: 70 },
     ],
   },
+  {
+    title: "Otros",
+    skills: [
+      {name: "Git", value: 80},
+      {name: "Docker", value: 60},
+      {name: "Heroku", value: 60},
+    ]
+  }
 ];
 
 export default skillsData;

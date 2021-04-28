@@ -24,7 +24,7 @@ function Skills(props) {
       <AppTitle title="Habilidades" variant="h4" />
       <Grid container spacing={3}>
         {skillsData.map((skills) => (
-          <Grid item xs={12} md={4}>
+          <Grid item xs={12} sm={6} lg={3}>
             <DisplaySkills title={skills.title} list={skills.skills} />
           </Grid>
         ))}

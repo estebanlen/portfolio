@@ -9,9 +9,9 @@ function LastProjects(props) {
   return (
     <div>
       <AppTitle variant="h3" title="Mis Proyectos" />
-      <Grid container spacing={2} justify="center">
+      <Grid container spacing={2} justify="center" style={{backgroundColor: "transparent"}}>
         {projectsData.map((project) => (
-          <Grid item>
+          <Grid item style={{backgroundColor: "transparent"}}>
             <Project item={project} />
           </Grid>
         ))}
