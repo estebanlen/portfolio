@@ -5,7 +5,7 @@ import GetAppIcon from "@material-ui/icons/GetApp";
 import AppTitle from "./AppTitle";
 import Skills from "./Skills";
 import aboutImg from "../assets/img/about.jpg";
-import cvFile from "../assets/download/CV_LencinaEsteban_2021.pdf";
+import cvFile from "../assets/download/CV_LencinaEsteban_2021-07.pdf";
 import aboutData from "../data/aboutData";
 
 const styles = {
@@ -14,17 +14,15 @@ const styles = {
   },
 };
 
-const showText = () => (
-  aboutData.map(p=>(
+const showText = () =>
+  aboutData.map((p) => (
     <div>
       <Typography variant="body1" color="initial" align="justify">
         {p}
       </Typography>
-      <br/>
+      <br />
     </div>
-  ))
-)
-
+  ));
 
 function About(props) {
   return (
@@ -35,13 +33,13 @@ function About(props) {
           <img style={styles.img} src={aboutImg} alt="" />
         </Grid>
         <Grid item md={8}>
-        {showText()}
+          {showText()}
           <Button
             size="large"
             component="a"
             target="_blank"
             rel="noopener noreferrer"
-            download="CV_LencinaEsteban_Feb2021"
+            download="CV_LencinaEsteban_Julio2021"
             variant="outlined"
             color="inherit"
             href={cvFile}

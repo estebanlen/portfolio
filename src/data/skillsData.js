@@ -24,11 +24,12 @@ const skillsData = [
   {
     title: "Otros",
     skills: [
-      {name: "Git", value: 80},
-      {name: "Docker", value: 60},
-      {name: "Heroku", value: 60},
-    ]
-  }
+      { name: "Git", value: 80 },
+      { name: "Docker", value: 60 },
+      { name: "Heroku", value: 60 },
+      { name: "Postman", value: 80 },
+    ],
+  },
 ];
 
 export default skillsData;
